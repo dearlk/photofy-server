@@ -1,0 +1,4 @@
+docker build . -t dearlk/photofy
+
+#docker run -it -p 8098:8098 -e PHOTO_ROOT=/volume1/photo/ -e PUBLIC_DIR=/public/photo -v /volume1/photo/:/volume1/photo/ -v $PWD:/app dearlk/photofy
+docker run -d -p 8098:8098 -e PHOTO_ROOT=/volume1/photo/ -e PUBLIC_DIR=/public/photo -v /volume1/photo/:/volume1/photo/ dearlk/photofy
